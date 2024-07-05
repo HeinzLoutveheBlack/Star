@@ -118,7 +118,8 @@ def kruskal_mst(graph):
     return mst
 
 
-os.chdir("C:\\Users\\Pratham\\Desktop\\IIA Internship\\CSV files")
+cwd = os.getcwd() 
+os.chdir(cwd+"\\CSV files")
 '''wise = pd.read_csv( 'table_WISE-allwise_p3as_psd-Cone1200_ngc.csv' )
 gaia = pd.read_csv( 'table_irsa_catalog_search_results_gaiaforngc.csv' )'''
 

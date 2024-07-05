@@ -4,7 +4,8 @@ import scipy
 import os
 import matplotlib.pyplot as plt
 
-os.chdir("C:\\Users\\Pratham\\Desktop\\IIA Internship\\CSV files")
+cwd = os.getcwd() 
+os.chdir(cwd+"\\CSV files")
 file = pd.read_csv( 'table_irsa_catalog_search_results.csv' )
 #print(file)
 file['w1-w2'] = file['w1mpro']-file['w2mpro']
