@@ -28,8 +28,9 @@ def closestmatch(array1,array2,array3,array4,array5):
 
     return candidate_distance
     # The return order is declination parameters followed by right ascension parameters
-
-os.chdir("C:\\Users\\Pratham\\Desktop\\IIA Internship\\CSV files")
+   
+cwd = os.getcwd() 
+os.chdir(cwd+"\\CSV files")
 file = pd.read_csv( 'Final File.csv' )
 gaia = pd.read_csv( 'table_Gaia-gaia_dr3_source-Box900.csv' )
 

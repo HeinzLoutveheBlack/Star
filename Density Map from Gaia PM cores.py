@@ -45,7 +45,8 @@ def densityfunction(array1,array2,precision,k):
     
     return demsity,renormalised1,renormalised2
 
-os.chdir("C:\\Users\\Pratham\\Desktop\\IIA Internship\\CSV files")
+cwd = os.getcwd() 
+os.chdir(cwd+"\\CSV files")
 file = pd.read_csv( 'table_Gaia-gaia_dr3_source-Box900.csv' )
 yso = pd.read_csv('Final file.csv')
 notnullfilter= (file['pmra'].notnull() & 

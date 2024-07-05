@@ -35,8 +35,8 @@ def dodbscan(file, eps, min_samples):
     return n_clusters
 
 
-
-os.chdir("C:\\Users\\Pratham\\Desktop\\IIA Internship\\CSV files")
+cwd = os.getcwd() 
+os.chdir(cwd+"\\CSV files")
 gaia = file = pd.read_csv( 'table_irsa_catalog_search_results_gaiaforngc.csv' )
 '''gaia = file = pd.read_csv( 'table_Gaia-gaia_dr3_source-Box900.csv' )'''
 notnullfilter= (file['pmra'].notnull() & 

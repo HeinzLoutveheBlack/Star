@@ -44,7 +44,9 @@ def densityfunction(array1,array2,precision,k):
         renormalised2.append(precision * (array2[i] - min2 ) /(max2-min2))
     
     return demsity,renormalised1,renormalised2
-os.chdir("C:\\Users\\Pratham\\Desktop\\IIA Internship\\CSV files")
+
+cwd = os.getcwd() 
+os.chdir(cwd+"\\CSV files")
 '''file = pd.read_csv( 'table_irsa_catalog_search_results_gaiaforngc.csv' )'''
 file = pd.read_csv( 'table_Gaia-gaia_dr3_source-Box900.csv' )
 yso = pd.read_csv('Final file.csv')
